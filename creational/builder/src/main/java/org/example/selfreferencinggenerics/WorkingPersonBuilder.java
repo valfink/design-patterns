@@ -1,4 +1,4 @@
-package org.example;
+package org.example.selfreferencinggenerics;
 
 public class WorkingPersonBuilder extends PersonBuilder<WorkingPersonBuilder> {
 

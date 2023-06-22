@@ -1,4 +1,6 @@
-package org.example;
+package org.example.selfreferencinggenerics;
+
+import org.example.Person;
 
 public class PersonBuilder<S extends PersonBuilder<S>> {
     // can only be used with a Type that extends PersonBuilder!

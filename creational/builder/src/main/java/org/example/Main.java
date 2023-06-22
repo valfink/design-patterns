@@ -1,5 +1,7 @@
 package org.example;
 
+import org.example.selfreferencinggenerics.WorkingPersonBuilder;
+
 public class Main {
     public static void main(String[] args) {
         WorkingPersonBuilder workingPersonBuilder = new WorkingPersonBuilder();
