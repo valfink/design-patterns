@@ -1,10 +1,12 @@
 package org.example.facade;
 
-import lombok.AllArgsConstructor;
+import org.example.Person;
 
-@AllArgsConstructor
 public class PersonAddressBuilder extends PersonBuilder {
     // constructor takes reference to Person, so we are working on the same object in the different builders!
+    public PersonAddressBuilder(Person person) {
+        this.person = person;
+    }
 
     public PersonAddressBuilder atStreetAddress(String streetAddress) {
         person.setStreetAddress(streetAddress);
