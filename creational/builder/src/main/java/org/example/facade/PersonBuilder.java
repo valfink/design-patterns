@@ -9,6 +9,10 @@ public class PersonBuilder {
         return new PersonAddressBuilder(person);
     }
 
+    public PersonJobBuilder works() {
+        return new PersonJobBuilder(person);
+    }
+
     public Person build() {
         return person;
     }
