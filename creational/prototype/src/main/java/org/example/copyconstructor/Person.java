@@ -11,6 +11,6 @@ public class Person {
 
     // this is the copy constructor – it DEPENDS on Address (nested object) having a copy constructor as well!
     public Person(Person other) {
-        this(other.getName(), other.getAddress());
+        this(other.getName(), new Address(other.getAddress()));
     }
 }
