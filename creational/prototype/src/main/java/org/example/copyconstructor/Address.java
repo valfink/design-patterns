@@ -3,6 +3,7 @@ package org.example.copyconstructor;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 
+// all nested Classes must provide a copy constructor!
 @AllArgsConstructor
 @Data
 public class Address {
