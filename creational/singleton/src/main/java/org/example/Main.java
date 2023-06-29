@@ -8,5 +8,9 @@ public class Main {
         System.out.println("Getting \"another\" Basic Singleton");
         BasicSingleton basicSingleton2 = BasicSingleton.getInstance();
         System.out.println(basicSingleton2);
+
+        System.out.println("Will get the Lazy Singleton now...");
+        LazySingleton lazySingleton = LazySingleton.getInstance();
+        System.out.println(lazySingleton);
     }
 }
