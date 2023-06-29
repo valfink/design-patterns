@@ -6,9 +6,11 @@ public class BasicSingleton {
 
     // constructor is made private, can only be accessed from within this class
     private BasicSingleton() {
+        System.out.println("Instantiating the Basic Singleton...");
     }
 
     public static BasicSingleton getInstance() {
+        System.out.println("Returning the Basic Singleton instance...");
         return INSTANCE;
     }
 }
