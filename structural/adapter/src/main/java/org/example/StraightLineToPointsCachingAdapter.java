@@ -22,7 +22,7 @@ public class StraightLineToPointsCachingAdapter implements Iterable<Point> {
             return;
         }
 
-        System.out.printf("%d: Generating points for (%d / %d) -> (%d / %d).%n",
+        System.out.printf("%d: Generating C A C H E D points for (%d / %d) -> (%d / %d).%n",
                 ++generatorCount, line.start().x(), line.start().y(), line.end().x(), line.end().y());
 
         ArrayList<Point> points = new ArrayList<>();

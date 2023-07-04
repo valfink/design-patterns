@@ -9,7 +9,7 @@ public class StraightLineToPointsBasicAdapter extends ArrayList<Point> {
 
     // provide constructor with the input data type as argument
     public StraightLineToPointsBasicAdapter(Line line) {
-        System.out.printf("%d: Generating points for (%d / %d) -> (%d / %d).%n",
+        System.out.printf("%d: Generating UNCACHED points for (%d / %d) -> (%d / %d).%n",
                 ++generatorCount, line.start().x(), line.start().y(), line.end().x(), line.end().y());
 
         if (line.start().x() == line.end().x()) {
