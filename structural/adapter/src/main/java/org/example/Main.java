@@ -17,6 +17,9 @@ public class Main {
         for (VectorRectangle vectorRectangle : vectorRectangles) {
             for (Line line : vectorRectangle) {
                 new StraightLineToPointsBasicAdapter(line).forEach(Main::drawPoint);
+                new StraightLineToPointsBasicAdapter(line).forEach(Main::drawPoint);
+                new StraightLineToPointsCachingAdapter(line).forEach(Main::drawPoint);
+                new StraightLineToPointsCachingAdapter(line).forEach(Main::drawPoint);
             }
         }
     }
