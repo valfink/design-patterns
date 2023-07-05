@@ -6,6 +6,7 @@ public interface SomeNeurons extends Iterable<Neuron> {
             return;
         }
 
+        // this works with a for-each loop, so a single element will have to fake being a collection
         for (Neuron from : this) {
             for (Neuron to : other) {
                 from.out.add(to);

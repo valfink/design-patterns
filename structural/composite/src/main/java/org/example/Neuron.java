@@ -3,11 +3,13 @@ package org.example;
 import java.util.*;
 import java.util.function.Consumer;
 
+// single element that masquerades as a collection (see below)
 public class Neuron implements SomeNeurons {
     protected final List<Neuron> in = new ArrayList<>();
     protected final List<Neuron> out = new ArrayList<>();
     protected final String id = UUID.randomUUID().toString();
 
+    // this is only to show that connecting has worked
     public void printConnections() {
         System.out.println("My ID is: " + id);
         System.out.println("INCOMING connections:");
