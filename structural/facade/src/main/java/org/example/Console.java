@@ -22,8 +22,8 @@ public class Console {
                 for (Viewport viewport : viewports) {
                     System.out.print(viewport.charAt(x, y));
                 }
-                System.out.println();
             }
+                System.out.println();
         }
     }
 
