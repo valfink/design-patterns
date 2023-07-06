@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import java.util.ArrayList;
 import java.util.List;
 
-// low-level class
+// Console becomes the Facade through the factory method which hides all the low-level APIs
 @AllArgsConstructor
 public class Console {
     private final List<Viewport> viewports = new ArrayList<>();
@@ -25,5 +25,13 @@ public class Console {
                 System.out.println();
             }
         }
+    }
+
+    public static Console newConsole(int width, int height) {
+        Buffer buffer = new Buffer(width, height);
+        Viewport viewport = new Viewport(buffer, width, height, 0, 0);
+        Console console = new Console(width, height);
+        console.addViewport(viewport);
+        return console;
     }
 }
