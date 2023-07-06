@@ -31,4 +31,9 @@ public class User {
                 .mapToObj(namesList::get)
                 .collect(Collectors.joining(" "));
     }
+
+    // method only for showing which names are actually in the database, not for production
+    public static String printAllNames() {
+        return namesList.stream().collect(Collectors.joining(", "));
+    }
 }
