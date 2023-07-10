@@ -5,12 +5,14 @@ public class Property<T> {
     private T value;
 
     public Property(T value) {
-        // logging here
+        // logging here, simulated through sout
+        System.out.println("Initializing the property to: " + value);
         this.value = value;
     }
 
     public void setValue(T value) {
-        // logging here
+        // logging here, simulated through sout
+        System.out.println("Changing the property to: " + value);
         this.value = value;
     }
 
