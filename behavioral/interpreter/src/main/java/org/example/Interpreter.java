@@ -25,10 +25,10 @@ public class Interpreter {
                             stringBuilder.append(text.charAt(j));
                             i++;
                         } else {
-                            tokens.add(new Token(TokenType.INTEGER, stringBuilder.toString()));
                             break;
                         }
                     }
+                    tokens.add(new Token(TokenType.INTEGER, stringBuilder.toString()));
                 }
             }
         }
