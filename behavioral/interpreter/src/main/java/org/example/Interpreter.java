@@ -9,7 +9,7 @@ public class Interpreter {
     }
 
     public static List<Token> lex(String text) {
-        ArrayList<Token> tokens = new ArrayList<>();
+        List<Token> tokens = new ArrayList<>();
 
         for (int i = 0; i < text.length(); i++) {
             switch (text.charAt(i)) {
