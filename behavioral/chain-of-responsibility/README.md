@@ -9,10 +9,10 @@
 
 - a chain that works by a method automatically calling the next method in the chain when it is finished
 - example:
-    - could be implemented by a `handle()` method on a base class that calls `next.handle()` (only if `next != null`)
-    - the actual chain consists of Objects that inherit from the base class and `Override` the `handle()` method,
-      finally calling `super.handle()` to ensure the chain continues
-    - to terminate the chain operation before the end of the chain, one Object could just not call `super.handle()`
+  - could be implemented by a `handle()` method on a base class that calls `next.handle()` (only if `next != null`)
+  - the actual chain consists of Objects that inherit from the base class and `Override` the `handle()` method,
+    finally calling `super.handle()` to ensure the chain continues
+  - to terminate the chain operation before the end of the chain, one Object could just not call `super.handle()`
 
 ## Command Query Separation
 
